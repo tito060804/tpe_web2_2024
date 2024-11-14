@@ -4,10 +4,17 @@
     <table class="table table-success table-striped">
         <?php foreach ($vinos as $vino) : ?>
             <tr>
+<<<<<<< HEAD
                 <td class="table-secondary"><a href="mostrarVino/<?= $vino->id_vino ?>"> <?= $vino->nombre_vino ?> - <?= $vino->tipo ?> - <?= $vino->cepa ?> </a></td>
                 <?php if (isset($_SESSION['USER_ID'])) : ?>
                 <td class="table-secondary"><a href="eliminarVino/<?= $vino->id_vino ?>" type="button" class='btn btn-secondary ml-auto'> Borrar</a></td>
                 <td class="table-secondary"><a href="modificarVino/<?= $vino->id_vino ?>" type="button" class='btn btn-secondary ml-auto'> Modificar</a> </td>
+=======
+                <td class="table-secondary"><a href="mostrarVino/<?= $vino->ID_vino ?>"> <?= $vino->Nombre ?> - <?= $vino->Tipo ?> - <?= $vino->Nombre_cepa ?> </a></td>
+                <?php if (isset($_SESSION['USER_ID'])) : ?>
+                <td class="table-secondary"><a href="eliminarVino/<?= $vino->ID_vino ?>" type="button" class='btn btn-secondary ml-auto'> Borrar</a></td>
+                <td class="table-secondary"><a href="modificarVino/<?= $vino->ID_vino ?>" type="button" class='btn btn-secondary ml-auto'> Modificar</a> </td>
+>>>>>>> 9a73d780875609e05bc53907e964401b3b00b534
                 <?php endif ?>
             </tr>
         <?php endforeach ?>

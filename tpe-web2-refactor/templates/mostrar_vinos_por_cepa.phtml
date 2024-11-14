@@ -1,11 +1,19 @@
 <?php require 'templates/header.phtml' ?>
 <div class="colorFondo">
+<<<<<<< HEAD
 <h1>Vinos por cepa: <?= $cepa->nombre_cepa ?></h1>
+=======
+<h1>Vinos por cepa: <?= $cepa->Nombre_cepa ?></h1>
+>>>>>>> 9a73d780875609e05bc53907e964401b3b00b534
     <table class="table table-success table-striped">
         <td class="table-secondary">Vino</td>
         <?php foreach ($vinos as $vino) : ?>
             <tr>
+<<<<<<< HEAD
                 <td class="table-secondary"><a href="mostrarVino/<?= $vino->id_vino ?>"> <?= $vino->nombre_vino ?> </a></td>
+=======
+                <td class="table-secondary"><a href="mostrarVino/<?= $vino->id_vino ?>"> <?= $vino->Nombre_vino ?> </a></td>
+>>>>>>> 9a73d780875609e05bc53907e964401b3b00b534
             </tr>
         <?php endforeach ?>
     </table>

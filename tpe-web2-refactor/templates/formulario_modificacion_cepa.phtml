@@ -3,6 +3,7 @@
 <form action="enviarModificarCepa/<?= $id ?>" method="POST">
 
     <p>Nombre</p>
+<<<<<<< HEAD
     <input type="text" name="Nombre_cepa" placeholder=<?= $cepa->nombre_cepa ?>>
     <p>Aroma</p>
     <input type="text" name="Aroma" placeholder=<?= $cepa->aroma ?>>
@@ -12,5 +13,16 @@
     <input type="text" name="Textura" placeholder=<?= $cepa->textura ?>>
 
     <button type="submit">Modificar</button>
+=======
+    <input type="text" name="Nombre_cepa" placeholder=<?= $cepa->Nombre_cepa ?>>
+    <p>Aroma</p>
+    <input type="text" name="Aroma" placeholder=<?= $cepa->Aroma ?>>
+    <p>Maridaje</p>
+    <input type="text" name="Maridaje" placeholder=<?= $cepa->Maridaje ?>>
+    <p>Textura</p>
+    <input type="text" name="Textura" placeholder=<?= $cepa->Textura ?>>
+
+    <button type="submit">Modicar</button>
+>>>>>>> 9a73d780875609e05bc53907e964401b3b00b534
 </form>
 <?php require 'templates/footer.phtml' ?>
