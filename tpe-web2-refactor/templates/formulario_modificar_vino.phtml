@@ -1,0 +1,22 @@
+<?php require 'templates/header.phtml' ?>
+<h2>Modificar Vino</h2>
+<form action="enviarModificarVino/<?= $vino->id_vino ?>" method="POST">
+
+    <p>Nombre</p>
+    <input type="text" name="Nombre" placeholder=<?= $vino->nombre_vino ?>>
+    <p>Tipo</p>
+    <input type="text" name="Tipo" placeholder=<?= $vino->tipo ?>>
+
+    <p>Cepa</p>
+    <select name="id_cepa">
+        <?php foreach ($cepas as $cepa) : ?>
+            <option value=<?= $cepa->id_cepa ?> <?php if ($cepa->id_cepa == $vino->cepa) { ?> selected <?php } ?>>
+                <?= $cepa->Nombre_cepa ?>
+            </option>
+        <?php endforeach ?>
+    </select>
+
+
+    <button type="submit">Modicar</button>
+</form>
+<?php require 'templates/footer.phtml' ?>

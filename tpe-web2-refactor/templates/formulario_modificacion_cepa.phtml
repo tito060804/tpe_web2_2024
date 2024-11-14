@@ -1,0 +1,16 @@
+<?php require 'templates/header.phtml' ?>
+<h2>Modificar Cepa</h2>
+<form action="enviarModificarCepa/<?= $id ?>" method="POST">
+
+    <p>Nombre</p>
+    <input type="text" name="Nombre_cepa" placeholder=<?= $cepa->nombre_cepa ?>>
+    <p>Aroma</p>
+    <input type="text" name="Aroma" placeholder=<?= $cepa->aroma ?>>
+    <p>Maridaje</p>
+    <input type="text" name="Maridaje" placeholder=<?= $cepa->maridaje ?>>
+    <p>Textura</p>
+    <input type="text" name="Textura" placeholder=<?= $cepa->textura ?>>
+
+    <button type="submit">Modificar</button>
+</form>
+<?php require 'templates/footer.phtml' ?>

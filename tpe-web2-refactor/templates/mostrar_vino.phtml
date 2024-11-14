@@ -1,0 +1,22 @@
+<?php require 'templates/header.phtml' ?>
+<div class="colorFondo">
+<h1>Informacion Vino: <?= $vino->nombre_vino ?> </h1>
+    <table class="table table-success table-striped">
+        <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Cepa</th>
+            </tr>
+        <thead>
+        <tbody>
+                <td>
+                   <p> <?= $vino->tipo ?> </p>
+                </td>
+                <td>
+                    <p><?= $vino->nombre_vino?></p>
+                </td>
+                
+        </tbody>
+    </table>
+</div>
+    <?php require 'templates/footer.phtml' ?>
