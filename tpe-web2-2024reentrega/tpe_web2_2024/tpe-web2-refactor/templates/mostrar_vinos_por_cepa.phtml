@@ -1,0 +1,14 @@
+<?php require 'templates/header.phtml' ?>
+<div class="colorFondo">
+<h1>Vinos por cepa: <?= $cepa->nombre_cepa ?></h1>
+    <table class="table table-success table-striped">
+        <td class="table-secondary">Vino</td>
+        <?php foreach ($vinos as $vino) : ?>
+            <tr>
+                <td class="table-secondary"><a href="mostrarVino/<?= $vino->id_vino ?>"> <?= $vino->nombre_vino ?> </a></td>
+            </tr>
+        <?php endforeach ?>
+    </table>
+</ul>
+</div>
+<?php require 'templates/footer.phtml' ?>

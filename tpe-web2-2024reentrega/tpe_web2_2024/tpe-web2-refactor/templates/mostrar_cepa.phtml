@@ -1,0 +1,26 @@
+<?php require 'templates/header.phtml' ?>
+<div class="colorFondo">
+<h1>Información sobre la cepa: <?= $cepa->nombre_cepa ?></h1>
+    <table class="table table-success table-striped">
+        <thead>
+            <tr>
+                <th>Aroma</th>
+                <th>Maridaje</th>
+                <th>Textura</th>
+            </tr>
+            <thead>
+            <tbody>
+                <td>
+                <p>Aroma: <?= $cepa->aroma ?></p>
+                </td>
+                <td>
+                <p>Maridaje: <?= $cepa->maridaje ?></p>
+                </td>
+                <td>
+                <p>textura: <?= $cepa->textura ?></p>
+                </td>
+                
+            </tbody>
+    </table>
+</div>
+    <?php require 'templates/footer.phtml' ?>
